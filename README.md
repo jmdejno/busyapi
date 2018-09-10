@@ -45,6 +45,7 @@ The API consists of a single endpoint which receives data when a patient uses th
 ## Test
 
 Using ApacheBench, ensure requests can be processed (locally) at a rate of 1,000,000 requests/min.
+**Note: you must have pm2 installed to run tests** `npm i -g pm2`
 
 **ApacheBench Command**
 ````
