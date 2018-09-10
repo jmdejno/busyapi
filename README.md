@@ -41,3 +41,17 @@ The API consists of a single endpoint which receives data when a patient uses th
     "id":22954
 }
 ````
+
+## Test
+
+Using ApacheBench, ensure requests can be processed (locally) at a rate of 1,000,000 requests/min.
+
+**ApacheBench Command**
+````
+ab -c 30 -n 83333 -p ./test/api-post-data.json -T application/json -l -k localhost:3000/api/usages
+````
+
+**Command to Test**
+````
+npm test
+````
